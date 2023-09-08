@@ -21,6 +21,10 @@ $Gilroy: "Gilroy";
 Global Style
 ============
 */
+h1,h2,h3,h4,h5{
+    color: $black;
+    line-height: 120%;
+}
 ul{
     list-style: none;
 }
@@ -30,4 +34,35 @@ a{
 button{
     border: none;
     background: none;
+}
+
+/*
+============
+Common Class
+============
+*/
+.main-heading{
+    font-size: 40px;
+    font-weight: 600;
+}
+.sec-heading{
+    font-size: 34px;
+    font-weight: 600;
+}
+.content-heading{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+@include media(768px) {
+
+    .main-heading{
+        font-size: 67px;
+    }
+    .sec-heading{
+        font-size: 50px;
+    }
+    .content-heading{
+        font-size: 38px;
+    }
 }
