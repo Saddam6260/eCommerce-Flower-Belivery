@@ -23,5 +23,29 @@
   src: url(../fonts/Gilroy-RegularItalic.ttf);
   font-weight: 400;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+/*
+============
+Global Style
+============
+*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
 
 /*# sourceMappingURL=style.css.map */

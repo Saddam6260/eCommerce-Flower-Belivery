@@ -1,2 +1,33 @@
 @import "./_fonts";
 
+$black: #121212;
+$Gilroy: "Gilroy";
+
+@mixin media($screen-size) {
+    @media only screen and (min-width: $screen-size) {
+        @content;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $Gilroy;
+}
+
+/*
+============
+Global Style
+============
+*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+    background: none;
+}
