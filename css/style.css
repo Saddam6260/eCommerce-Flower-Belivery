@@ -126,5 +126,65 @@ Common Class
     letter-spacing: 0.4px;
   }
 }
+/*
+======
+Header
+======
+*/
+header {
+  border: 1px solid #121212;
+}
+header .hide-menu {
+  display: flex;
+  justify-content: space-between;
+}
+header .hide-menu li {
+  padding: 12px 16px;
+}
+header .hide-menu li:nth-child(1) {
+  border-right: 1px solid #121212;
+  padding: 16px 18px 8px 18px;
+  font-size: 18px;
+}
+header .hide-menu li:nth-child(2) {
+  border-left: 1px solid #121212;
+}
+header div {
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    border: 1px solid #121212;
+  }
+  header .hide-menu {
+    display: none;
+  }
+  header div {
+    display: flex;
+    justify-content: space-between;
+  }
+  header div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header div ul li {
+    padding: 32px 55px;
+  }
+  header div ul li a {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    color: #121212;
+  }
+  header div ul:nth-child(1) li {
+    border-right: 1px solid #121212;
+  }
+  header div ul:nth-child(2) li {
+    border-left: 1px solid #121212;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
