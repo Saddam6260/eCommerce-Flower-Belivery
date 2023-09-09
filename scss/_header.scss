@@ -4,7 +4,7 @@ Header
 ======
 */
 header {
-  border: 1px solid $black;
+  border-bottom: 1px solid $black;
   .hide-menu {
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@ header {
       border-left: 1px solid $black;
     }
   }
-  div{
+  div {
     display: none;
   }
 }
@@ -42,25 +42,25 @@ header {
         align-items: center;
 
         li {
-          padding: 32px 55px;
+          padding: 30px 55px;
 
-          a{
+          a {
             font-size: 16px;
             line-height: 120%;
-            letter-spacing: .4px;
+            letter-spacing: 0.4px;
             font-weight: 500;
             color: $black;
           }
         }
       }
       ul:nth-child(1) {
-        li{
-            border-right: 1px solid $black;
+        li {
+          border-right: 1px solid $black;
         }
       }
       ul:nth-child(2) {
-        li{
-            border-left: 1px solid $black;
+        li {
+          border-left: 1px solid $black;
         }
       }
     }

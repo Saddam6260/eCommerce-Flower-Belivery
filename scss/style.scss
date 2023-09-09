@@ -15,6 +15,9 @@ $Gilroy: "Gilroy";
     box-sizing: border-box;
     font-family: $Gilroy;
 }
+body{
+    border: 1px solid $black;
+}
 
 /*
 ============
@@ -105,4 +108,5 @@ Common Class
     }
 }
 
-@import "./_header"
+@import "./_header";
+@import "./_main";
