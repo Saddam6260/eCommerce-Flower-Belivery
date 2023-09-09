@@ -235,6 +235,17 @@ main .main-content div:nth-child(2) .description-wrap p {
   color: #121212;
   line-height: 120%;
 }
+main .flower-category {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main .flower-category .item {
+  border: 1px solid #121212;
+}
+main .flower-category .item img {
+  width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
   main .main-content {

@@ -48,6 +48,19 @@ main {
       }
     }
   }
+  .flower-category{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .item{
+      border: 1px solid $black;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
 
 @include media(768px) {
