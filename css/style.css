@@ -236,4 +236,27 @@ main .main-content div:nth-child(2) .description-wrap p {
   line-height: 120%;
 }
 
+@media only screen and (min-width: 768px) {
+  main .main-content {
+    padding: 90px;
+  }
+  main .main-content .main-heading-wrap {
+    padding-bottom: 54px;
+  }
+  main .main-content div:nth-child(2) {
+    margin-top: 24px;
+  }
+  main .main-content div:nth-child(2) .description-wrap {
+    padding-left: 24px;
+  }
+  main .main-content div:nth-child(2) .description-wrap p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .main-content {
+    width: 50%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

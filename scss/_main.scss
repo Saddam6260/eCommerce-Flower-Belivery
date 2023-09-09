@@ -49,3 +49,34 @@ main {
     }
   }
 }
+
+@include media(768px) {
+  main {
+    .main-content {
+      padding: 90px;
+  
+      .main-heading-wrap {
+        padding-bottom: 54px;
+      }
+      div:nth-child(2) {
+        margin-top: 24px;
+  
+        .description-wrap {
+          padding-left: 24px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(1440px) {
+
+  main{
+    .main-content{
+      width: 50%;
+    }
+  }
+}
