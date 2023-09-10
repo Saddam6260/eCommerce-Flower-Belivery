@@ -261,12 +261,35 @@ main .flower-category {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-}
-main .flower-category .item {
-  border: 1px solid #121212;
+  border-top: 1px solid #121212;
 }
 main .flower-category .item img {
   width: 100%;
+  margin-bottom: -4px;
+}
+main .flower-category .item:nth-child(1),
+main .flower-category :nth-child(4),
+main .flower-category :nth-child(5),
+main .flower-category :nth-child(8),
+main .flower-category :nth-child(9) {
+  border-bottom: 1px solid #121212;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .flower-category .item:nth-child(1) button,
+main .flower-category :nth-child(4) button,
+main .flower-category :nth-child(5) button,
+main .flower-category :nth-child(8) button,
+main .flower-category :nth-child(9) button {
+  position: absolute;
+  bottom: 15px;
+}
+main .flower-category .item:nth-child(4),
+main .flower-category :nth-child(8) {
+  border-left: 1px solid #121212;
 }
 
 @media only screen and (min-width: 768px) {
@@ -275,6 +298,9 @@ main .flower-category .item img {
   }
   main .main-content .main-heading-wrap {
     padding-bottom: 54px;
+  }
+  main .main-content .main-heading-wrap p {
+    font-size: 18px;
   }
   main .main-content div:nth-child(2) {
     margin-top: 24px;
@@ -287,8 +313,23 @@ main .flower-category .item img {
   }
 }
 @media only screen and (min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
   main .main-content {
-    width: 50%;
+    padding: 80px;
+    border-bottom: 1px solid #121212;
+  }
+  main .main-content div:nth-child(2) .img-wrap {
+    height: 253px;
+  }
+  main .main-content div:nth-child(2) .img-wrap img {
+    height: 100%;
+  }
+  main .flower-category .item:nth-child(1), main .flower-category :nth-child(5), main .flower-category :nth-child(9) {
+    border-left: 1px solid #121212;
   }
 }
 /*
@@ -300,7 +341,6 @@ About
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  border-top: 1px solid #121212;
 }
 #about-us .content {
   padding: 40px 16px;
@@ -319,6 +359,9 @@ About
   #about-us .content {
     padding: 80px;
   }
+  #about-us .content:first-child {
+    border-bottom: none;
+  }
 }
 @media only screen and (min-width: 1440px) {
   #about-us {
@@ -327,6 +370,7 @@ About
   }
   #about-us .content:first-child {
     border-right: 1px solid #121212;
+    border-top: 1px solid #121212;
   }
 }
 /*

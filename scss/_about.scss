@@ -7,7 +7,6 @@ About
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  border-top: 1px solid $black;
 
   .content {
     padding: 40px 16px;
@@ -30,6 +29,9 @@ About
         .content{
             padding: 80px;
         }
+        .content:first-child{
+          border-bottom: none;
+        }
     }
 }
 @include media(1440px) {
@@ -39,6 +41,7 @@ About
 
         .content:first-child {
             border-right: 1px solid $black;
+            border-top: 1px solid $black;
         }
     }
 }

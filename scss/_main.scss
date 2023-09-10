@@ -48,17 +48,38 @@ main {
       }
     }
   }
-  .flower-category{
+  .flower-category {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
+    border-top: 1px solid $black;
 
-    .item{
-      border: 1px solid $black;
-
-      img{
+    .item {
+      img {
         width: 100%;
+        margin-bottom: -4px;
       }
+    }
+    .item:nth-child(1),
+    :nth-child(4),
+    :nth-child(5),
+    :nth-child(8),
+    :nth-child(9) {
+      border-bottom: 1px solid $black;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      button {
+        position: absolute;
+        bottom: 15px;
+      }
+    }
+    .item:nth-child(4),
+    :nth-child(8) {
+      border-left: 1px solid $black;
     }
   }
 }
@@ -67,13 +88,16 @@ main {
   main {
     .main-content {
       padding: 90px;
-  
+
       .main-heading-wrap {
         padding-bottom: 54px;
+
+        p{
+          font-size: 18px;
+        }
       }
       div:nth-child(2) {
         margin-top: 24px;
-  
         .description-wrap {
           padding-left: 24px;
           p {
@@ -86,10 +110,30 @@ main {
 }
 
 @include media(1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
 
-  main{
     .main-content{
-      width: 50%;
+      padding: 80px;
+      border-bottom: 1px solid $black;
+
+      div:nth-child(2) {
+        .img-wrap{
+          height: 253px;
+
+          img{
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .flower-category{
+      .item:nth-child(1), :nth-child(5), :nth-child(9) {
+        border-left: 1px solid $black;
+      }
     }
   }
 }
