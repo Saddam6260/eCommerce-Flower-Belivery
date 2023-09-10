@@ -98,6 +98,7 @@ Common Class
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.35px;
+  color: #121212;
 }
 
 .shop-now {
@@ -288,6 +289,58 @@ main .flower-category .item img {
 @media only screen and (min-width: 1440px) {
   main .main-content {
     width: 50%;
+  }
+}
+/*
+===========
+Our Service
+===========
+*/
+#our-service .weding-service {
+  background-image: url(../images/weading-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-top: 1px solid #121212;
+  padding: 40px 16px;
+  color: white;
+  position: relative;
+  isolation: isolate;
+}
+#our-service .weding-service ::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: #121212;
+  opacity: 0.1;
+}
+#our-service .weding-service h2 {
+  margin: 24px 0px 16px 0px;
+  color: white;
+}
+#our-service .weding-service button {
+  margin-top: 64px;
+  border: 1px solid white;
+}
+#our-service .weding-service button a {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  #our-service .weding-service {
+    padding: 106px 80px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #our-service .weding-service {
+    padding: 216px 80px;
+    display: flex;
+    justify-content: center;
+  }
+  #our-service .weding-service .content-wrap {
+    max-width: 586px;
   }
 }
 /*

@@ -1,0 +1,62 @@
+/*
+===========
+Our Service
+===========
+*/
+#our-service {
+  .weding-service {
+    background-image: url(../images/weading-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-top: 1px solid $black;
+    padding: 40px 16px;
+    color: white;
+
+    position: relative;
+    isolation: isolate;
+
+    ::after {
+      content: " ";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background-color: $black;
+      opacity: 0.1;
+    }
+
+    h2 {
+      margin: 24px 0px 16px 0px;
+      color: white;
+    }
+    button {
+      margin-top: 64px;
+      border: 1px solid white;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+@include media(768px) {
+  #our-service {
+    .weding-service {
+      padding: 106px 80px;
+    }
+  }
+}
+@include media(1440px) {
+  #our-service {
+    .weding-service {
+      padding: 216px 80px;
+      display: flex;
+      justify-content: center;
+
+      .content-wrap {
+        max-width: 586px;
+      }
+    }
+  }
+}
