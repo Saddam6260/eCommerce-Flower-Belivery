@@ -77,10 +77,14 @@ Common Class
   font-weight: 500;
 }
 
-.common-pera {
+.description-14, .description-16 {
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
+}
+
+.description-16 {
+  font-size: 16px;
 }
 
 .btn {
@@ -102,6 +106,12 @@ Common Class
   letter-spacing: 0.35px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.gray-head {
+  color: #808080;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -128,6 +138,9 @@ Common Class
   .shop-now {
     font-size: 16px;
     letter-spacing: 0.4px;
+  }
+  .gray-head {
+    font-size: 21px;
   }
 }
 /*
@@ -268,6 +281,40 @@ main .flower-category .item img {
   main .main-content {
     width: 50%;
   }
+}
+/*
+======
+Footer
+======
+*/
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+footer .content {
+  padding: 40px 16px;
+  border-top: 1px solid #121212;
+}
+footer .content:nth-child(1) p {
+  display: flex;
+  flex-flow: column wrap;
+}
+footer .content:nth-child(1) form {
+  display: flex;
+  flex-flow: column wrap;
+}
+footer .content:nth-child(1) form input {
+  padding: 12px 16px;
+  border: 0.5px solid #D2D2D7;
+  margin: 16px 0px;
+}
+footer .content:nth-child(1) form button {
+  border: none;
+  background-color: #121212;
+}
+footer .content:nth-child(1) form button a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

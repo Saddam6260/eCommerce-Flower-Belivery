@@ -1,7 +1,9 @@
 @import "./_fonts";
 
-$black: #121212;
 $Gilroy: "Gilroy";
+$black: #121212;
+$gray: #808080;
+$light-gray: #D2D2D7;
 
 @mixin media($screen-size) {
     @media only screen and (min-width: $screen-size) {
@@ -56,10 +58,14 @@ Common Class
     font-size: 26px;
     font-weight: 500;
 }
-.common-pera{
+.description-14{
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
+}
+.description-16{
+    @extend .description-14;
+    font-size: 16px;
 }
 .btn{
     width: 100%;
@@ -78,6 +84,11 @@ Common Class
     letter-spacing: .35px;
     font-size: 14px;
     font-weight: 600;
+}
+.gray-head{
+    color: #808080;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 @include media(768px) {
@@ -106,7 +117,12 @@ Common Class
         font-size: 16px;
         letter-spacing: .4px;
     }
+    .gray-head{
+        font-size: 21px;
+    }
 }
 
 @import "./_header";
 @import "./_main";
+@import "./_about";
+@import "./_footer";

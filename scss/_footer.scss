@@ -1,0 +1,40 @@
+/*
+======
+Footer
+======
+*/
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  .content {
+    padding: 40px 16px;
+    border-top: 1px solid $black;
+  }
+  .content:nth-child(1) {
+    p {
+      display: flex;
+      flex-flow: column wrap;
+    }
+    form {
+      display: flex;
+      flex-flow: column wrap;
+
+      input{
+        padding: 12px 16px;
+        border: .5px solid $light-gray;
+        margin: 16px 0px;
+      }
+
+      button{
+        border: none;
+        background-color: $black;
+
+        a{
+            color: white;
+        }
+      }
+    }
+  }
+}
