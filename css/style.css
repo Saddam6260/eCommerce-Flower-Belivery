@@ -293,8 +293,23 @@ footer {
   grid-template-rows: auto auto auto auto;
 }
 footer .content {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 16px;
   padding: 40px 16px;
   border-top: 1px solid #121212;
+}
+footer .content ul {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 8px;
+}
+footer .content ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: #121212;
+  letter-spacing: 0.35px;
+  line-height: 120%;
 }
 footer .content:nth-child(1) p {
   display: flex;
@@ -307,7 +322,10 @@ footer .content:nth-child(1) form {
 footer .content:nth-child(1) form input {
   padding: 12px 16px;
   border: 0.5px solid #D2D2D7;
-  margin: 16px 0px;
+  margin-bottom: 16px;
+}
+footer .content:nth-child(1) form input ::placeholder {
+  font-size: 14px;
 }
 footer .content:nth-child(1) form button {
   border: none;
@@ -315,6 +333,45 @@ footer .content:nth-child(1) form button {
 }
 footer .content:nth-child(1) form button a {
   color: white;
+}
+footer .content:nth-child(2) div p:nth-child(1) {
+  color: #808080;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+footer .content:nth-child(2) div .description-14, footer .content:nth-child(2) div .description-16 {
+  font-weight: 500;
+}
+footer .content:nth-child(2) .social-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  footer .content {
+    row-gap: 24px;
+    padding: 40px;
+  }
+  footer .content ul li {
+    font-size: 16px;
+  }
+  footer .content:nth-child(1) {
+    border-right: 1px solid #121212;
+  }
+  footer .content:nth-child(3) {
+    border-right: 1px solid #121212;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
