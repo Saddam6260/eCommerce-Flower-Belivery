@@ -292,6 +292,44 @@ main .flower-category .item img {
   }
 }
 /*
+=====
+About
+=====
+*/
+#about-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  border-top: 1px solid #121212;
+}
+#about-us .content {
+  padding: 40px 16px;
+}
+#about-us .content:first-child {
+  border-bottom: 1px solid #121212;
+}
+#about-us .content:last-child h2 {
+  margin: 24px 0px 16px 0px;
+}
+#about-us .content:last-child button {
+  margin-top: 64px;
+}
+
+@media only screen and (min-width: 768px) {
+  #about-us .content {
+    padding: 80px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #about-us {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  #about-us .content:first-child {
+    border-right: 1px solid #121212;
+  }
+}
+/*
 ============
 why chose us
 ============

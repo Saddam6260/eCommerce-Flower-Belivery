@@ -1,0 +1,44 @@
+/*
+=====
+About
+=====
+*/
+#about-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  border-top: 1px solid $black;
+
+  .content {
+    padding: 40px 16px;
+  }
+  .content:first-child {
+    border-bottom: 1px solid $black;
+  }
+  .content:last-child {
+    h2 {
+      margin: 24px 0px 16px 0px;
+    }
+    button {
+      margin-top: 64px;
+    }
+  }
+}
+
+@include media(768px) {
+    #about-us{
+        .content{
+            padding: 80px;
+        }
+    }
+}
+@include media(1440px) {
+    #about-us{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        .content:first-child {
+            border-right: 1px solid $black;
+        }
+    }
+}
