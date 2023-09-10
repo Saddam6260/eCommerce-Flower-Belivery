@@ -1,0 +1,41 @@
+/*
+============
+why chose us
+============
+*/
+#why-chose-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+
+  .content {
+    padding: 40px 16px;
+    border-top: 1px solid $black;
+
+    p {
+      margin-top: 16px;
+    }
+  }
+}
+
+@include media(768px) {
+  #why-chose-us {
+    .content {
+      padding: 80px;
+    }
+  }
+}
+
+@include media(1440px) {
+  #why-chose-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+
+    .content:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/5;
+        border-right: 1px solid $black;
+    }
+  }
+}

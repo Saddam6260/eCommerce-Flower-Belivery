@@ -292,6 +292,41 @@ main .flower-category .item img {
   }
 }
 /*
+============
+why chose us
+============
+*/
+#why-chose-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+}
+#why-chose-us .content {
+  padding: 40px 16px;
+  border-top: 1px solid #121212;
+}
+#why-chose-us .content p {
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  #why-chose-us .content {
+    padding: 80px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #why-chose-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+  #why-chose-us .content:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    border-right: 1px solid #121212;
+  }
+}
+/*
 ==========
 Contact Us
 ==========
@@ -376,7 +411,7 @@ Contact Us
 
 @media only screen and (min-width: 768px) {
   .follow-us .img-wrap {
-    height: 400px;
+    height: 500px;
   }
   .follow-us .img-wrap img {
     height: 100%;
