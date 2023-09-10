@@ -4,6 +4,32 @@ Our Service
 ===========
 */
 #our-service {
+  border-top: 1px solid $black;
+  .heading {
+    padding: 40px 16px;
+  }
+  .flower-subcription {
+    border-top: 1px solid $black;
+    .img-wrap {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-bottom: 1px solid $black;
+      }
+    }
+    .content {
+      padding: 40px 16px;
+      text-align: center;
+
+      h2 {
+        margin: 16px 0px;
+      }
+      button {
+        margin-top: 64px;
+      }
+    }
+  }
   .weding-service {
     background-image: url(../images/weading-img.jpg);
     background-position: center;
@@ -25,7 +51,9 @@ Our Service
       background-color: $black;
       opacity: 0.1;
     }
-
+    p {
+      color: white;
+    }
     h2 {
       margin: 24px 0px 16px 0px;
       color: white;
@@ -45,6 +73,15 @@ Our Service
     .weding-service {
       padding: 106px 80px;
     }
+    .heading {
+      padding: 80px 80px;
+      text-align: center;
+    }
+    .flower-subcription {
+      .content {
+        padding: 80px;
+      }
+    }
   }
 }
 @include media(1440px) {
@@ -57,6 +94,15 @@ Our Service
       .content-wrap {
         max-width: 586px;
       }
+    }
+    .flower-subcription {
+        display: flex;
+        align-items: center;
+        .img-wrap {  
+            img {
+              margin-bottom: -5px;
+            }
+          }
     }
   }
 }

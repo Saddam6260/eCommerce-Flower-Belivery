@@ -296,6 +296,32 @@ main .flower-category .item img {
 Our Service
 ===========
 */
+#our-service {
+  border-top: 1px solid #121212;
+}
+#our-service .heading {
+  padding: 40px 16px;
+}
+#our-service .flower-subcription {
+  border-top: 1px solid #121212;
+}
+#our-service .flower-subcription .img-wrap {
+  width: 100%;
+}
+#our-service .flower-subcription .img-wrap img {
+  width: 100%;
+  border-bottom: 1px solid #121212;
+}
+#our-service .flower-subcription .content {
+  padding: 40px 16px;
+  text-align: center;
+}
+#our-service .flower-subcription .content h2 {
+  margin: 16px 0px;
+}
+#our-service .flower-subcription .content button {
+  margin-top: 64px;
+}
 #our-service .weding-service {
   background-image: url(../images/weading-img.jpg);
   background-position: center;
@@ -316,6 +342,9 @@ Our Service
   background-color: #121212;
   opacity: 0.1;
 }
+#our-service .weding-service p {
+  color: white;
+}
 #our-service .weding-service h2 {
   margin: 24px 0px 16px 0px;
   color: white;
@@ -332,6 +361,13 @@ Our Service
   #our-service .weding-service {
     padding: 106px 80px;
   }
+  #our-service .heading {
+    padding: 80px 80px;
+    text-align: center;
+  }
+  #our-service .flower-subcription .content {
+    padding: 80px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   #our-service .weding-service {
@@ -341,6 +377,13 @@ Our Service
   }
   #our-service .weding-service .content-wrap {
     max-width: 586px;
+  }
+  #our-service .flower-subcription {
+    display: flex;
+    align-items: center;
+  }
+  #our-service .flower-subcription .img-wrap img {
+    margin-bottom: -5px;
   }
 }
 /*
