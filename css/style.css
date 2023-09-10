@@ -114,6 +114,14 @@ Common Class
   font-size: 18px;
 }
 
+.sec-name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #121212;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 768px) {
   .main-heading {
     font-size: 67px;
@@ -141,6 +149,9 @@ Common Class
   }
   .gray-head {
     font-size: 21px;
+  }
+  .sec-name {
+    font-size: 14px;
   }
 }
 /*
@@ -171,9 +182,6 @@ header div {
 }
 
 @media only screen and (min-width: 1440px) {
-  header {
-    border: 1px solid #121212;
-  }
   header .hide-menu {
     display: none;
   }
@@ -283,6 +291,56 @@ main .flower-category .item img {
   }
 }
 /*
+==============
+CLient Reviews
+==============
+*/
+#client-reviews {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #121212;
+}
+#client-reviews div:nth-child(1) {
+  margin-bottom: 24px;
+}
+#client-reviews div:nth-child(1) p {
+  margin-top: 8px;
+}
+#client-reviews div:nth-child(2) {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 16px;
+  margin-bottom: 32px;
+}
+#client-reviews div:nth-child(2) p {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 120%;
+}
+#client-reviews div:nth-child(2) .client-name {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  #client-reviews {
+    padding: 80px;
+  }
+  #client-reviews div:nth-child(2) {
+    margin-bottom: 60px;
+  }
+  #client-reviews div:nth-child(2) p {
+    font-size: 32px;
+  }
+  #client-reviews div:nth-child(2) .client-name {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+/*
 ======
 Footer
 ======
@@ -371,6 +429,9 @@ footer .content:nth-child(2) .social-wrap {
   footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+  footer .content:nth-child(2) {
+    border-right: 1px solid #121212;
   }
 }
 

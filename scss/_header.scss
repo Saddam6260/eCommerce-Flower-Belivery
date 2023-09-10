@@ -28,7 +28,6 @@ header {
 
 @include media(1440px) {
   header {
-    border: 1px solid $black;
     .hide-menu {
       display: none;
     }
